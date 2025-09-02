@@ -8,23 +8,23 @@
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(135deg, #111 40%, #222 100%);
+      background: linear-gradient(135deg, #000 40%, #111 100%);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: #00ff66; /* Verde base para texto */
       font-family: 'Freckle Face', cursive;
       overflow: hidden;
     }
 
     h1 {
       font-size: 5rem;
-      color: #ff3cac;
+      color: #00ff66; /* Verde principal */
       text-shadow: 
-        -2px -2px 0 #fff000,
-        2px -2px 0 #00f0ff,
-        2px 2px 0 #ff0099,
-        -2px 2px 0 #00ff99;
+        -2px -2px 0 #9900ff,  /* Morado */
+        2px -2px 0 #6600cc,   /* Morado oscuro */
+        2px 2px 0 #bb00ff,    /* Morado brillante */
+        -2px 2px 0 #5500aa;   /* Morado más profundo */
       transform: rotate(-3deg);
       animation: pulse 2s infinite;
     }
@@ -32,14 +32,24 @@
     @keyframes pulse {
       0%, 100% {
         transform: scale(1) rotate(-3deg);
+        text-shadow: 
+          -2px -2px 0 #9900ff,
+          2px -2px 0 #6600cc,
+          2px 2px 0 #bb00ff,
+          -2px 2px 0 #5500aa;
       }
       50% {
         transform: scale(1.05) rotate(-3deg);
+        text-shadow: 
+          -3px -3px 5px #bb00ff,
+          3px -3px 5px #6600cc,
+          3px 3px 5px #9900ff,
+          -3px 3px 5px #5500aa;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Hola mundo</h1>
+  <h1>Hola mundo v2.0</h1>
 </body>
 </html>
