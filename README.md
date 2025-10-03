@@ -1,29 +1,53 @@
-# 📦 APPSDIST
 
+# 📦 AppsDist
 
-## 📁 Estructura del proyecto
+Repositorio para ejemplos de aplicaciones distribuidas.
 
-    APPSDIST/
-    ├── static-page/ (Este proyecto contiene una página estática alojada en el directorio `static-page`.)
-    │   └── index.html
-    ├── LICENSE
-    └── README.md
+## 📁 Estructura del Proyecto
+
+```
+AppsDist/
+├── node-projects/
+│   └── firstapp/
+│       ├── index.js
+│       ├── package.json
+│       ├── package-lock.json
+│       └── node_modules/
+├── static-page/
+│   └── index.html
+├── LICENSE
+└── README.md
+```
 
 ### Descripción de Carpetas y Archivos
 
--   **LICENSE**: Archivo que contiene la licencia del proyecto.
--   **README.md**: Documentación principal del proyecto.
+- **node-projects/firstapp/**: Ejemplo de aplicación Node.js con Express. Incluye un endpoint básico en `/` que responde con un mensaje JSON.
+- **static-page/**: Página web estática de ejemplo con diseño visual.
+- **LICENSE**: Licencia del proyecto.
+- **README.md**: Documentación principal.
 
-## Cómo Usar
+## 🚀 Cómo Usar
 
-1.  Clonar este repositorio:
+### Clonar el repositorio
 
-    ``` bash
-    git clone <url-del-repositorio>
-    cd APPDIST
-    ```
+```bash
+git clone <url-del-repositorio>
+cd AppsDist
+```
 
-## Licencia
+### Ejecutar la app Node.js
 
-Este proyecto se distribuye bajo los términos definidos en el archivo
-[LICENSE](LICENSE).
+```bash
+cd node-projects/firstapp
+npm install
+node index.js
+```
+La aplicación estará disponible en [http://localhost:3000](http://localhost:3000)
+
+### Ver la página estática
+
+Abre `static-page/index.html` en tu navegador.
+
+## 📚 Licencia
+
+Este proyecto se distribuye bajo los términos definidos en el archivo [LICENSE](LICENSE).
