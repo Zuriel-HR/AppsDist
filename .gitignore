@@ -1,10 +1,15 @@
+# Primera App
 node-projects/firstapp/node_modules/
 
+# Practica de Automatizacion
 node-projects/pr-automatizacion/node_modules/
 node-projects/pr-automatizacion/.env
 
+# Practica de Servicios
 node-projects/pr-servicios/node_modules/
 
+# Practica de Repaso
+node-projects/pr-repaso/node_modules/
+
 # Logs
-logs    
-*.log
+**/*.log

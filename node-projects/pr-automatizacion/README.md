@@ -22,7 +22,7 @@ pr-automatizacion/
 1. Instala dependencias:
 
 ```powershell
-npm install axios nodemailer dotenv node-telegram-bot-api
+npm install
 ```
 
 2. Crea un archivo `.env` en la carpeta con el siguiente contenido (ajusta tus datos):
@@ -39,12 +39,10 @@ TELEGRAM_CHAT_ID=tu_chat_id
 
 ```powershell
 node index.js
+node --no-deprecation index.js 
 ```
 
 ## Evidencias de Prueba
 
 Incluye capturas de pantalla de la consola, correos y mensajes de Telegram en la entrega final.
-
 ---
-
-> Modifica el script según las necesidades de tu práctica y agrega tus evidencias.

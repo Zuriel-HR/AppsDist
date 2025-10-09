@@ -1,52 +1,30 @@
 
 # 📦 AppsDist
 
-Repositorio para ejemplos de aplicaciones distribuidas.
+Colección de prácticas y ejemplos para la materia de Aplicaciones Distribuidas.
 
-## 📁 Estructura del Proyecto
+## 📁 Arquitectura General
+
+El repositorio está organizado en carpetas, cada una correspondiente a una práctica, ejemplo o recurso:
 
 ```
 AppsDist/
-├── node-projects/
-│   └── firstapp/
-│       ├── index.js
-│       ├── package.json
-│       ├── package-lock.json
-│       └── node_modules/
-├── static-page/
-│   └── index.html
+├── node-projects/        # Proyectos Node.js (prácticas, ejercicios, repasos)
+├── static-page/          # Pagina estatica
 ├── LICENSE
 └── README.md
 ```
 
-### Descripción de Carpetas y Archivos
+Cada subcarpeta contiene su propio README y código fuente. Consulta cada carpeta para instrucciones y detalles específicos.
 
-- **node-projects/firstapp/**: Ejemplo de aplicación Node.js con Express. Incluye un endpoint básico en `/` que responde con un mensaje JSON.
-- **static-page/**: Página web estática de ejemplo con diseño visual.
-- **LICENSE**: Licencia del proyecto.
-- **README.md**: Documentación principal.
+## 🚀 Uso General
 
-## 🚀 Cómo Usar
-
-### Clonar el repositorio
-
-```bash
-git clone <url-del-repositorio>
-cd AppsDist
-```
-
-### Ejecutar la app Node.js
-
-```bash
-cd node-projects/firstapp
-npm install
-node index.js
-```
-La aplicación estará disponible en [http://localhost:3000](http://localhost:3000)
-
-### Ver la página estática
-
-Abre `static-page/index.html` en tu navegador.
+1. Clona el repositorio:
+	```bash
+	git clone <url-del-repositorio>
+	cd AppsDist
+	```
+2. Ingresa a la carpeta de la práctica que deseas probar y sigue las instrucciones de su README.
 
 ## 📚 Licencia
 
