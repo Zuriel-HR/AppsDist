@@ -10,6 +10,7 @@ El repositorio está organizado en carpetas, cada una correspondiente a una prá
 ```
 AppsDist/
 ├── node-projects/        # Proyectos Node.js (prácticas, ejercicios, repasos)
+|       └── results/      # Cada proyecto tiene una carpeta results donde se documentan los resultados obtenidos
 ├── static-page/          # Pagina estatica
 ├── LICENSE
 └── README.md

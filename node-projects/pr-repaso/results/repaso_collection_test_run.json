@@ -1,0 +1,540 @@
+{
+	"id": "78e5dc01-1d91-4b4f-950e-20460df1e667",
+	"name": "Servicios Web - Práctica de Repaso",
+	"timestamp": "2025-10-09T04:15:33.426Z",
+	"collection_id": "40180724-52decfaa-117b-4b73-8504-07e883f124ca",
+	"folder_id": 0,
+	"environment_id": "40180724-8ec4142b-ee6c-44a8-9c37-78b8f9ecda1a",
+	"totalPass": 28,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-10-09T04:15:31.985Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "dc13da18-65f0-4d38-b70b-f2fc26c6ec41",
+			"name": "/saludo",
+			"url": "http://localhost:3000/saludo",
+			"time": 28,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				28
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "664aa8b0-60b3-40f0-a19f-858ce1a3265f",
+			"name": "/calcular",
+			"url": "http://localhost:3000/calcular",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "a0e95920-4411-4d08-b094-bfc69ba11b3b",
+			"name": "/tareas",
+			"url": "http://localhost:3000/tareas",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "37b657d3-fffa-45d3-b319-86972599139c",
+			"name": "/tareas",
+			"url": "http://localhost:3000/tareas",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "49eff82f-827e-4272-931a-fb4c17d57d41",
+			"name": "/tareas/1",
+			"url": "http://localhost:3000/tareas/1",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "26d0793c-2ed1-4f20-aa4a-e45181b2b8a6",
+			"name": "/tareas/1",
+			"url": "http://localhost:3000/tareas/1",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "f13037d5-5dff-49e1-8863-395b271d9068",
+			"name": "/validar-password",
+			"url": "http://localhost:3000/validar-password",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "9e187821-8335-4faa-a345-9179922c64b6",
+			"name": "/convertir-temperatura",
+			"url": "http://localhost:3000/convertir-temperatura",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "8b05994a-8d48-4f81-a58c-0a15b70f8593",
+			"name": "/buscar",
+			"url": "http://localhost:3000/buscar",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "01a01f21-803d-4218-98ee-0fd11018d093",
+			"name": "/contar-palabras",
+			"url": "http://localhost:3000/contar-palabras",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "3fd60eba-11a9-4f72-9ee7-a6820b254c5b",
+			"name": "/generar-perfil",
+			"url": "http://localhost:3000/generar-perfil",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "3b91fff0-2b85-40da-afdb-ea912f35293e",
+			"name": "/calcular-promedio",
+			"url": "http://localhost:3000/calcular-promedio",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "67fbed3d-bdad-4ad1-a3d1-23d60e4bc7bd",
+			"name": "/productos",
+			"url": "http://localhost:3000/productos",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "75bb09e8-b284-4bd9-9a39-a4a02cc1d343",
+			"name": "/productos",
+			"url": "http://localhost:3000/productos",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 60,
+	"collection": {
+		"requests": [
+			{
+				"id": "dc13da18-65f0-4d38-b70b-f2fc26c6ec41",
+				"method": "POST"
+			},
+			{
+				"id": "664aa8b0-60b3-40f0-a19f-858ce1a3265f",
+				"method": "POST"
+			},
+			{
+				"id": "a0e95920-4411-4d08-b094-bfc69ba11b3b",
+				"method": "POST"
+			},
+			{
+				"id": "37b657d3-fffa-45d3-b319-86972599139c",
+				"method": "GET"
+			},
+			{
+				"id": "49eff82f-827e-4272-931a-fb4c17d57d41",
+				"method": "PUT"
+			},
+			{
+				"id": "26d0793c-2ed1-4f20-aa4a-e45181b2b8a6",
+				"method": "DELETE"
+			},
+			{
+				"id": "f13037d5-5dff-49e1-8863-395b271d9068",
+				"method": "POST"
+			},
+			{
+				"id": "9e187821-8335-4faa-a345-9179922c64b6",
+				"method": "POST"
+			},
+			{
+				"id": "8b05994a-8d48-4f81-a58c-0a15b70f8593",
+				"method": "POST"
+			},
+			{
+				"id": "01a01f21-803d-4218-98ee-0fd11018d093",
+				"method": "POST"
+			},
+			{
+				"id": "3fd60eba-11a9-4f72-9ee7-a6820b254c5b",
+				"method": "POST"
+			},
+			{
+				"id": "3b91fff0-2b85-40da-afdb-ea912f35293e",
+				"method": "POST"
+			},
+			{
+				"id": "67fbed3d-bdad-4ad1-a3d1-23d60e4bc7bd",
+				"method": "POST"
+			},
+			{
+				"id": "75bb09e8-b284-4bd9-9a39-a4a02cc1d343",
+				"method": "GET"
+			}
+		]
+	}
+}

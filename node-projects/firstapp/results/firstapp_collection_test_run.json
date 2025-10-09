@@ -1,0 +1,207 @@
+{
+	"id": "e1d4326a-120e-4293-9add-59c67d555ee1",
+	"name": "Basic Servicios Collection",
+	"timestamp": "2025-10-09T04:12:42.345Z",
+	"collection_id": "40180724-616180a6-c701-4132-bd8c-1f1d24c71f16",
+	"folder_id": 0,
+	"environment_id": "40180724-8ec4142b-ee6c-44a8-9c37-78b8f9ecda1a",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-10-09T04:12:41.639Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b438eae9-fbaf-4c87-b8a3-4906f6ee4e56",
+			"name": "/ - Root",
+			"url": "http://localhost:3000",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "8159f5e4-b425-4a19-9826-8a281b9a731a",
+			"name": "/serv001 - GET with query params",
+			"url": "http://localhost:3000/serv001?id=Nope&token=2345678dhuj43567fgh&geo=123456789,1234567890",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "ec90990f-b629-4638-9fbd-076eeb569bf2",
+			"name": "/serv002 - GET with query params",
+			"url": "http://localhost:3000/serv002?id=Nope&token=2345678dhuj43567fgh&geo=123456789,1234567890",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "ae1d5b85-b7e0-4573-ae46-cc2b9b9208ba",
+			"name": "/serv003 - POST with JSON body",
+			"url": "http://localhost:3000/serv003",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "1579ad56-3468-42f0-bce4-6ef5bae920a1",
+			"name": "/serv004 - POST with URL param",
+			"url": "http://localhost:3000/serv004/1234567",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 52,
+	"collection": {
+		"requests": [
+			{
+				"id": "b438eae9-fbaf-4c87-b8a3-4906f6ee4e56",
+				"method": "GET"
+			},
+			{
+				"id": "8159f5e4-b425-4a19-9826-8a281b9a731a",
+				"method": "GET"
+			},
+			{
+				"id": "ec90990f-b629-4638-9fbd-076eeb569bf2",
+				"method": "GET"
+			},
+			{
+				"id": "ae1d5b85-b7e0-4573-ae46-cc2b9b9208ba",
+				"method": "POST"
+			},
+			{
+				"id": "1579ad56-3468-42f0-bce4-6ef5bae920a1",
+				"method": "POST"
+			}
+		]
+	}
+}

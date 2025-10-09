@@ -1,0 +1,281 @@
+{
+	"id": "8a7dbeef-f229-4f51-97ea-30b4a98bfd9f",
+	"name": "Servicios Web - Cadenas y SHA256",
+	"timestamp": "2025-10-09T04:18:38.229Z",
+	"collection_id": "40180724-f37f43ad-47c2-40ac-b362-a4be5a245c3d",
+	"folder_id": 0,
+	"environment_id": "40180724-8ec4142b-ee6c-44a8-9c37-78b8f9ecda1a",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-10-09T04:18:37.374Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ae6c0c9d-dbd5-43ad-8ebc-a4c4b688f79f",
+			"name": "/mascaracteres",
+			"url": "http://localhost:3000/mascaracteres",
+			"time": 24,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "de729f71-7228-4b0b-9ec1-8756b35ee571",
+			"name": "/menoscaracteres",
+			"url": "http://localhost:3000/menoscaracteres",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "3126fda3-5319-409c-ad15-a27b3f0d1f76",
+			"name": "/numcaracteres",
+			"url": "http://localhost:3000/numcaracteres",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "604e04a9-2021-420a-ab38-5192f5bf1799",
+			"name": "/palindroma",
+			"url": "http://localhost:3000/palindroma",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "f3b11227-c137-417c-b440-9c7fd4329596",
+			"name": "/concat",
+			"url": "http://localhost:3000/concat",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "e33a3cf5-7622-4bc7-a86d-9da77236073e",
+			"name": "/applysha256",
+			"url": "http://localhost:3000/applysha256",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "bd03622e-3773-4ed5-aa91-2cc4b4248128",
+			"name": "/verifysha256",
+			"url": "http://localhost:3000/verifysha256",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 37,
+	"collection": {
+		"requests": [
+			{
+				"id": "ae6c0c9d-dbd5-43ad-8ebc-a4c4b688f79f",
+				"method": "POST"
+			},
+			{
+				"id": "de729f71-7228-4b0b-9ec1-8756b35ee571",
+				"method": "POST"
+			},
+			{
+				"id": "3126fda3-5319-409c-ad15-a27b3f0d1f76",
+				"method": "POST"
+			},
+			{
+				"id": "604e04a9-2021-420a-ab38-5192f5bf1799",
+				"method": "POST"
+			},
+			{
+				"id": "f3b11227-c137-417c-b440-9c7fd4329596",
+				"method": "POST"
+			},
+			{
+				"id": "e33a3cf5-7622-4bc7-a86d-9da77236073e",
+				"method": "POST"
+			},
+			{
+				"id": "bd03622e-3773-4ed5-aa91-2cc4b4248128",
+				"method": "POST"
+			}
+		]
+	}
+}
