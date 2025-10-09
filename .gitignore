@@ -3,6 +3,8 @@ node-projects/firstapp/node_modules/
 node-projects/pr-automatizacion/node_modules/
 node-projects/pr-automatizacion/.env
 
+node-projects/pr-servicios/node_modules/
+
 # Logs
 logs    
 *.log
