@@ -35,6 +35,24 @@ app.get("/serv001", async function (req, res) {
     res.json(r);
 });
 
+/*
+Calling this service sending payload as parameters in URL: 
+http://localhost:3000/serv002?id=Nope&token=2345678dhuj43567fgh&geo=123456789,1234567890
+*/
+app.get("/serv002", async function (req, res) {
+    const user_id1 = req.query.id;
+    const token1 = req.query.token;
+    const geo1 = req.query.geo;
+
+    r1 ={
+      'user_id': user_id1,
+      'token': token1,
+      'geo': geo1
+    };
+
+    res.json(r1);
+});
+
 app.listen(3000, function() {
     console.log('Aplicación ejemplo, escuchando el puerto 3000!');
 });
