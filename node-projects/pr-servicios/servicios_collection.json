@@ -1,0 +1,302 @@
+{
+    "info": {
+        "name": "Servicios Web - Cadenas y SHA256",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "/mascaracteres",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"cadena1\": \"hola\",\n    \"cadena2\": \"mundo\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/mascaracteres",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "mascaracteres"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/menoscaracteres",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"cadena1\": \"hi\",\n    \"cadena2\": \"world\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/menoscaracteres",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "menoscaracteres"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/numcaracteres",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"cadena\": \"cadena prueba\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/numcaracteres",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "numcaracteres"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/palindroma",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"cadena\": \"anita lava la tina\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/palindroma",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "palindroma"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/concat",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"cadena1\": \"hello\",\n    \"cadena2\": \"world\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/concat",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "concat"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/applysha256",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"cadena\": \"password123\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/applysha256",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "applysha256"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/verifysha256",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"cadena\": \"password123\",\n    \"sha256\": \"ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/verifysha256",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "verifysha256"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

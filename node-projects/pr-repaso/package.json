@@ -1,0 +1,17 @@
+{
+  "name": "pr-repaso",
+  "version": "1.0.0",
+  "description": "Práctica de repaso de servicios web para aplicaciones distribuidas.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "uuid": "^9.0.1"
+  }
+}

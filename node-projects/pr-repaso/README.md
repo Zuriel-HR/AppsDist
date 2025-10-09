@@ -22,7 +22,7 @@ Este proyecto contiene 10 servicios web desarrollados en Node.js para practicar 
 1. Instala las dependencias:
 
 ```powershell
-npm install express body-parser uuid
+npm install
 ```
 
 2. Ejecuta el servidor:
@@ -33,10 +33,13 @@ node index.js
 
 3. Realiza peticiones a los endpoints según la descripción de cada ejercicio.
 
+## Pruebas con Colección JSON
+
+Para facilitar las pruebas, se incluye una colección JSON (compatible con Postman o Thunder Client) con ejemplos de cada endpoint. Importa la colección en tu cliente de APIs favorito y realiza pruebas fácilmente.
+
 ## Evidencias
 
-Coloca capturas de pantalla de pruebas en la carpeta `docs/`.
+Capturas de pantalla de pruebas en la carpeta `docs/`.
 
 ---
 
-Incluye tu nombre y grupo en la entrega. Agrega a `nsierrar@gmail.com` con acceso de solo lectura en Git.

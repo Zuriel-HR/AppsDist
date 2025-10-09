@@ -17,7 +17,7 @@ Este proyecto implementa una serie de servicios web en Node.js que reciben y res
 1. Instala las dependencias:
 
 ```powershell
-npm install express body-parser crypto
+npm install
 ```
 
 2. Ejecuta el servidor:
@@ -46,6 +46,10 @@ POST a `/mascaracteres`:
   "resultado": "mundo!"
 }
 ```
+
+## Pruebas con Colección JSON
+
+Para facilitar las pruebas, se incluye una colección JSON (compatible con Postman o Thunder Client) con ejemplos de cada endpoint. Importa la colección en tu cliente de APIs favorito y realiza pruebas fácilmente.
 
 ---
 

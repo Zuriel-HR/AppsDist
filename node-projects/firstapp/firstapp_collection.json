@@ -1,0 +1,204 @@
+{
+    "info": {
+        "name": "Basic Servicios Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "/ - Root",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/serv001 - GET with query params",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/serv001?id=Nope&token=2345678dhuj43567fgh&geo=123456789,1234567890",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "serv001"
+                    ],
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "Nope"
+                        },
+                        {
+                            "key": "token",
+                            "value": "2345678dhuj43567fgh"
+                        },
+                        {
+                            "key": "geo",
+                            "value": "123456789,1234567890"
+                        }
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/serv002 - GET with query params",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/serv002?id=Nope&token=2345678dhuj43567fgh&geo=123456789,1234567890",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "serv002"
+                    ],
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "Nope"
+                        },
+                        {
+                            "key": "token",
+                            "value": "2345678dhuj43567fgh"
+                        },
+                        {
+                            "key": "geo",
+                            "value": "123456789,1234567890"
+                        }
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/serv003 - POST with JSON body",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"id\": \"nope\",\n    \"token\": \"ertydfg456Dfgwerty\",\n    \"geo\": \"12345678,34567890\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/serv003",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "serv003"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/serv004 - POST with URL param",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/serv004/1234567",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "serv004",
+                        "1234567"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

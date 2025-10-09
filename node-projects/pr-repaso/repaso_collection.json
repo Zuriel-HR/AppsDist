@@ -1,0 +1,586 @@
+{
+    "info": {
+        "name": "Servicios Web - Pr\u00e1ctica de Repaso",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "/saludo",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/saludo",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "saludo"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"nombre\": \"Juan\"\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/calcular",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/calcular",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "calcular"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"a\": 10,\n    \"b\": 2,\n    \"operacion\": \"suma\"\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/tareas",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/tareas",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "tareas"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"id\": 1,\n    \"titulo\": \"Estudiar Node.js\",\n    \"completada\": false\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/tareas",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/tareas",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "tareas"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/tareas/1",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/tareas/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "tareas",
+                        "1"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"titulo\": \"Estudiar Express\",\n    \"completada\": true\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/tareas/1",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/tareas/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "tareas",
+                        "1"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/validar-password",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/validar-password",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "validar-password"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"password\": \"Password123\"\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/convertir-temperatura",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/convertir-temperatura",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "convertir-temperatura"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"valor\": 100,\n    \"desde\": \"C\",\n    \"hacia\": \"F\"\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/buscar",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/buscar",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "buscar"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"array\": [\n        1,\n        2,\n        3,\n        4,\n        5\n    ],\n    \"elemento\": 3\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/contar-palabras",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/contar-palabras",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "contar-palabras"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"texto\": \"Hola mundo esto es una prueba\"\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/generar-perfil",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/generar-perfil",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "generar-perfil"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"nombre\": \"Ana\",\n    \"edad\": 30,\n    \"intereses\": [\n        \"lectura\",\n        \"viajes\"\n    ]\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/calcular-promedio",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/calcular-promedio",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "calcular-promedio"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"calificaciones\": [\n        9,\n        8,\n        7,\n        10\n    ]\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/productos",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/productos",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "productos"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"nombre\": \"Laptop\",\n    \"categoria\": \"tecnologia\",\n    \"precio\": 1200\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "/productos",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:3000/productos",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "productos"
+                    ]
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "pm.test(\"Response time is less than 500ms\", function () {",
+                            "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                            "});"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
