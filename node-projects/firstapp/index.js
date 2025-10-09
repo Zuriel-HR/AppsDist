@@ -75,6 +75,16 @@ app.post("/serv003", async function (req, res) {
     res.json(r);
 });
 
+/*
+Call this service sending parameter as a part of the URL
+http://localhost:3000/serv004/1234567
+*/
+app.post("/serv004/:info", async function (req, res) {
+    const info = req.params.info;
+    let r = {'info': info};
+    res.json(r);
+});
+
 app.listen(3000, function() {
     console.log('Aplicación ejemplo, escuchando el puerto 3000!');
 });
