@@ -41,8 +41,4 @@ TELEGRAM_CHAT_ID=tu_chat_id
 node index.js
 node --no-deprecation index.js 
 ```
-
-## Evidencias de Prueba
-
-Incluye capturas de pantalla de la consola, correos y mensajes de Telegram en la entrega final.
 ---
