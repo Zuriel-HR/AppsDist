@@ -4,7 +4,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 // ¡IMPORTANTE! Reemplaza <db_password> con tu contraseña real.
 // Se recomienda usar variables de entorno para no exponer la contraseña en el código.
-const uri = "mongodb+srv://admin:admin@main.k3etqo9.mongodb.net/?retryWrites=true&w=majority&appName=main";
+const uri = "mongodb+srv://test:12345@main.k3etqo9.mongodb.net/?retryWrites=true&w=majority&appName=main";
 
 const client = new MongoClient(uri, {
   serverApi: {
