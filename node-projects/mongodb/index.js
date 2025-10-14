@@ -1,7 +1,29 @@
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://admin:admin@main.k3etqo9.mongodb.net/?retryWrites=true&w=majority&appName=main";
+const { consultarDocumentos } = require('./app.js');
 
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://admin:<db_password>@main.k3etqo9.mongodb.net/?retryWrites=true&w=majority&appName=main";
+
+async function main() {
+  console.log("Iniciando la aplicación...");
+  
+  // Llamamos a la función para obtener los datos de la base de datos
+  const datos = await consultarDocumentos();
+
+  if (datos) {
+    console.log("\n--- Resultados recibidos en index.js ---");
+    console.log("Total de documentos:", datos.length);
+  }
+  
+  console.log("\nLa aplicación ha finalizado su ejecución.");
+}
+
+// Ejecutamos la función principal
+main();
+
+
+
+/*
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
@@ -9,8 +31,8 @@ const client = new MongoClient(uri, {
     strict: true,
     deprecationErrors: true,
   }
-});
-
+});*/
+/*
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
@@ -23,4 +45,4 @@ async function run() {
     await client.close();
   }
 }
-run().catch(console.dir);
+run().catch(console.dir);*/
