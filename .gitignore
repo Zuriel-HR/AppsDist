@@ -11,5 +11,8 @@ node-projects/pr-servicios/node_modules/
 # Practica de Repaso
 node-projects/pr-repaso/node_modules/
 
+# Ejemplo uso de MongoDB
+node-projects/mongodb/node_modules/
+
 # Logs
 **/*.log
