@@ -1,9 +1,70 @@
-#INTRO BD NOSQL
+# INTRO BD NOSQL
 
-COLLECTIONS > DOCUMENTS 
+COLLECTIONS > DOCUMENTS
 
-EXPLICACION CODIGO 
+Este proyecto muestra cómo conectarse a MongoDB (Atlas o on‑premise) con Node.js, cómo configurar las credenciales vía `.env`, y ofrece una pequeña CLI para realizar operaciones CRUD sobre cualquier base de datos/colección.
 
-TAREAS: 
+## Requisitos
+- Node.js 18+
+- Una cadena de conexión de MongoDB (recomendado usar Atlas)
 
-CREAR NUEVA BD COLLECCION CON 10 DOCUMENTOS
+## Configuración de entorno (.env)
+1. Copia el archivo de ejemplo:
+   - Windows PowerShell: `Copy-Item .env.example .env`
+   - Bash: `cp .env.example .env`
+2. Edita `.env` y define:
+   - `MONGODB_URI` = tu cadena de conexión completa
+   - Opcional para el ejemplo de `app.js`:
+     - `MONGODB_DB` (por defecto `sample_mflix`)
+     - `MONGODB_COLLECTION` (por defecto `comments`)
+
+Ejemplo de `MONGODB_URI` para Atlas:
+`mongodb+srv://<user>:<pass>@<cluster-host>/?retryWrites=true&w=majority&appName=<appname>`
+
+> Notas
+> - El archivo `.env` está ignorado por Git. No subas tus credenciales.
+> - La app usa `dotenv` para cargar variables de entorno automáticamente.
+
+## Instalación
+```
+npm install
+```
+
+## Uso rápido
+- Listar bases de datos:
+  - `node index.js dbs`
+- Listar colecciones de una base:
+  - `node index.js cols <db>`
+- Buscar documentos:
+  - `node index.js find <db> <collection> [filterJSON] [optionsJSON]`
+  - Ej.: `node index.js find sample_mflix comments '{"name":"John"}' '{"limit":5}'`
+- Insertar un documento:
+  - `node index.js insert <db> <collection> <docJSON>`
+  - Ej.: `node index.js insert mydb users '{"name":"Ada","role":"admin"}'`
+- Actualizar documentos (updateMany):
+  - `node index.js update <db> <collection> <filterJSON> <updateJSON> [optionsJSON]`
+  - Ej.: `node index.js update mydb users '{"role":"user"}' '{"$set":{"role":"member"}}'`
+- Borrar documentos (deleteMany):
+  - `node index.js delete <db> <collection> <filterJSON>`
+
+También puedes usar los scripts de npm:
+```
+npm run dbs
+npm start -- find sample_mflix comments
+```
+
+## Scripts incluidos
+- `index.js`: CLI para CRUD genérico.
+- `crud.js`: utilidades genéricas (listDatabases, listCollections, find, insertOne, updateMany, deleteMany).
+- `app.js`: ejemplo simple que lee hasta 10 documentos de la colección por defecto definida en `.env`.
+- `recoverdbnames.js`: imprime los nombres de las bases usando la misma conexión de `.env`.
+
+## Buenas prácticas de seguridad
+- Nunca subas credenciales reales a Git.
+- Usa usuarios con permisos mínimos necesarios en MongoDB.
+- Rotación de credenciales y uso de IP allowlist en Atlas.
+
+## Tareas sugeridas
+- Crear nueva BD y colección con 10 documentos usando la CLI:
+  - `node index.js insert mydb mycollection '{"_seed":true,"i":0}'` (repetir cambiando `i`)
+  - o con un pequeño script que llame repetidamente a `insert`.

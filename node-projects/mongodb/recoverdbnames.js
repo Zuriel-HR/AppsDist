@@ -1,31 +1,21 @@
-// "Guerrilla" Workshop - Distributed Applications-UPIITA-IPN
+// "Guerrilla" Workshop - Distributed Applications - UPIITA - IPN
 
-const MongoClient = require("mongodb").MongoClient;
-const assert = require("assert");
-
-async function listDatabases(client) {
-  databasesList = await client.db().admin().listDatabases();
-
-  console.log("Databases:");
-  databasesList.databases.forEach((db) => console.log(` - ${db.name}`));
-}
+require('dotenv').config();
+const { listDatabases } = require('./crud');
 
 async function main() {
-  const uri = "mongodb+srv://test:12345@main.k3etqo9.mongodb.net/?retryWrites=true&w=majority&appName=main";
-
-  const client = new MongoClient(uri, { useUnifiedTopology: true });
-
+  if (!process.env.MONGODB_URI) {
+    console.error('MONGODB_URI no está definido. Configúralo en .env.');
+    process.exit(1);
+  }
   try {
-    // Connect to the MongoDB cluster
-    await client.connect();
-
-    // Make the appropriate DB calls
-    await listDatabases(client);
+    const dbs = await listDatabases();
+    console.log('Databases:');
+    dbs.forEach((db) => console.log(` - ${db.name}`));
   } catch (e) {
     console.error(e);
-  } finally {
-    await client.close();
+    process.exitCode = 1;
   }
 }
 
-main().catch(console.error);
+main();
