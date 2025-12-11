@@ -5,13 +5,17 @@ Colección de prácticas y ejemplos para la materia de Aplicaciones Distribuidas
 
 ## 📁 Arquitectura General
 El repositorio está organizado en carpetas, cada una correspondiente a una práctica, ejemplo o recurso:
-
+```
 AppsDist/
 ├── node-projects/        # Proyectos Node.js (prácticas, ejercicios, repasos)
-|       └── results/      # Cada proyecto tiene una carpeta results donde se documentan los resultados obtenidos
+|       ├── pr-1/results/      # Cada proyecto tiene una carpeta donde se documentan los resultados
+|       └── pr-2/
+|       └── pr-n/
 ├── static-page/          # Pagina estatica
 ├── LICENSE
 └── README.md
+```
+
 
 - Cada subcarpeta contiene su propio README y código fuente. Consulta cada carpeta para instrucciones y detalles específicos.
 
