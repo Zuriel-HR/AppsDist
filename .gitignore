@@ -14,5 +14,18 @@ node-projects/pr-repaso/node_modules/
 # Ejemplo uso de MongoDB
 node-projects/mongodb/node_modules/
 
+#ULTIMAS 3 PRACTICAS
+
+# Practica FE con React y API call
+node-projects/pr-react-ui (servicios)/node_modules/
+
+
+# Practica de Cotizacion de Divisas
+node-projects/pr-cotizacion/node_modules/
+
+
+# Proyecto final
+node-projects/proyecto-final-mexico-profundo/node_modules/
+
 # Logs
 **/*.log
