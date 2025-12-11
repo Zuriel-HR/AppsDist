@@ -1,9 +1,11 @@
 // index.js - Servicios Web para cadenas y SHA256
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const crypto = require('crypto');
 
 const app = express();
+app.use(cors()); // habilita CORS para permitir peticiones desde el frontend
 app.use(bodyParser.json());
 
 function error(msg) {
