@@ -88,6 +88,9 @@ h1 {
   font-weight: 600;
   color: #334155;
   transition: background 0.2s ease, color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .tab.active {
@@ -163,6 +166,9 @@ button {
   font-weight: 700;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 button:disabled {
@@ -195,6 +201,11 @@ button:active:not(:disabled) {
 .error {
   color: #ef4444;
   margin: 6px 0 0;
+}
+
+ion-icon {
+  font-size: 18px;
+  vertical-align: middle;
 }
 
 @media (max-width: 860px) {

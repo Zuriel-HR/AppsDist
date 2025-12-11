@@ -30,8 +30,11 @@ Abre la URL que muestra Vite (por defecto http://localhost:5173).
 
 ## Uso de la UI
 - Tab **Servicios de cadenas**: Formularios POST para cada endpoint de `/pr-servicios` (`/mascaracteres`, `/menoscaracteres`, `/numcaracteres`, `/palindroma`, `/concat`, `/applysha256`, `/verifysha256`). Ajusta la Base URL si tu backend corre en otro host/puerto.
-- Tab **MongoDB API**: Probador genérico de POST (ruta + cuerpo JSON). Úsalo cuando expongas un servicio HTTP para el proyecto `/mongodb`.
-
-## Pendientes / ideas
-- Integrar Ionic en la UI.
-- Conectar con el CRUD HTTP real de `/mongodb` cuando esté publicado.
+- Tab **MongoDB API**: Probador para la API HTTP de `/mongodb` (arranca con `npm run api` dentro de ese proyecto, por defecto puerto 4000). Incluye acciones:
+  - GET `/dbs`
+  - GET `/cols?db=`
+  - POST `/find` (db, collection, filter?, options?)
+  - POST `/insert` (db, collection, doc)
+  - POST `/update` (db, collection, filter, update, options?)
+  - POST `/delete` (db, collection, filter)
+- UI trae íconos de Ionicons vía CDN para una apariencia estilo Ionic (no se instaló ionic completo).

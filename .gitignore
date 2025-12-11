@@ -27,5 +27,8 @@ node-projects/pr-cotizacion/node_modules/
 # Proyecto final
 node-projects/proyecto-final-mexico-profundo/node_modules/
 
+# Proyecto final
+.cursor/
+
 # Logs
 **/*.log

@@ -2,7 +2,9 @@
 
 COLLECTIONS > DOCUMENTS
 
-Este proyecto muestra cómo conectarse a MongoDB (Atlas o on‑premise) con Node.js, cómo configurar las credenciales vía `.env`, y ofrece una pequeña CLI para realizar operaciones CRUD sobre cualquier base de datos/colección.
+Este proyecto muestra cómo conectarse a MongoDB (Atlas o on‑premise) con Node.js, cómo configurar las credenciales vía `.env`, y ofrece:
+- CLI para operaciones CRUD genéricas.
+- API HTTP ligera para usar desde el frontend `pr-react-ui-servicios/ui-final` (puerto 4000 por defecto).
 
 ## Requisitos
 - Node.js 18+
@@ -30,7 +32,7 @@ Ejemplo de `MONGODB_URI` para Atlas:
 npm install
 ```
 
-## Uso rápido
+## Uso rápido (CLI)
 - Listar bases de datos:
   - `node index.js dbs`
 - Listar colecciones de una base:
@@ -47,11 +49,29 @@ npm install
 - Borrar documentos (deleteMany):
   - `node index.js delete <db> <collection> <filterJSON>`
 
-También puedes usar los scripts de npm:
+Scripts npm de ayuda:
 ```
 npm run dbs
 npm start -- find sample_mflix comments
 ```
+
+## API HTTP para el frontend
+Arranca el servidor:
+```
+npm run api
+```
+Por defecto escucha en `http://localhost:4000` (configurable con `PORT`).
+
+Endpoints:
+- `GET /health` → estado.
+- `GET /dbs` → `{ databases }`.
+- `GET /cols?db=sample_mflix` → `{ db, collections }`.
+- `POST /find` → body `{ db, collection, filter?, options? }`.
+- `POST /insert` → body `{ db, collection, doc }`.
+- `POST /update` → body `{ db, collection, filter, update, options? }`.
+- `POST /delete` → body `{ db, collection, filter }`.
+
+Usa `VITE_MONGODB_URL` en el frontend si cambias el host/puerto.
 
 ## Scripts incluidos
 - `index.js`: CLI para CRUD genérico.
