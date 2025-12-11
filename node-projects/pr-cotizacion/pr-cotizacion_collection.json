@@ -1,0 +1,56 @@
+{
+  "info": {
+    "name": "pr-cotizacion",
+    "_postman_id": "e9f3d4b8-0000-4a8c-a000-000000000001",
+    "description": "Colección de prueba para los endpoints de cotización",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Quote - GBPUSD",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/quote?pair=gbp-usd",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "quote"],
+          "query": [{ "key": "pair", "value": "gbp-usd" }]
+        }
+      }
+    },
+    {
+      "name": "Buy - GBPUSD",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/buy?pair=gbp-usd",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "buy"],
+          "query": [{ "key": "pair", "value": "gbp-usd" }]
+        }
+      }
+    },
+    {
+      "name": "Sell - GBPUSD",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/sell?pair=gbp-usd",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "sell"],
+          "query": [{ "key": "pair", "value": "gbp-usd" }]
+        }
+      }
+    }
+  ]
+}
+

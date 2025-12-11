@@ -1,0 +1,88 @@
+{
+	"id": "8d21ca7e-4ae1-4e7d-8354-d3c48deea3a0",
+	"name": "pr-cotizacion",
+	"timestamp": "2025-12-11T06:50:54.871Z",
+	"collection_id": "40180724-9402811f-30a7-4ae4-abb1-33d498a6cd9e",
+	"folder_id": 0,
+	"environment_id": "40180724-8ec4142b-ee6c-44a8-9c37-78b8f9ecda1a",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-12-11T06:50:51.457Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c66c61a6-0e30-4421-999d-d4c6b06957b5",
+			"name": "Quote - GBPUSD",
+			"url": "http://localhost:3000/api/quote?pair=gbp-usd",
+			"time": 1359,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1359
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e1e7fd9d-36c3-4f99-b583-8e60348610c8",
+			"name": "Buy - GBPUSD",
+			"url": "http://localhost:3000/api/buy?pair=gbp-usd",
+			"time": 862,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				862
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bc950f60-3713-436e-9dec-83f057609504",
+			"name": "Sell - GBPUSD",
+			"url": "http://localhost:3000/api/sell?pair=gbp-usd",
+			"time": 737,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				737
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2958,
+	"collection": {
+		"requests": [
+			{
+				"id": "c66c61a6-0e30-4421-999d-d4c6b06957b5",
+				"method": "GET"
+			},
+			{
+				"id": "e1e7fd9d-36c3-4f99-b583-8e60348610c8",
+				"method": "GET"
+			},
+			{
+				"id": "bc950f60-3713-436e-9dec-83f057609504",
+				"method": "GET"
+			}
+		]
+	}
+}
