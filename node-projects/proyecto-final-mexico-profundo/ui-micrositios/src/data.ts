@@ -1,4 +1,6 @@
-// TypeScript Interfaces
+import { imagenes } from './data/imagenes';
+
+// --- TypeScript Interfaces (Se mantienen igual) ---
 
 export interface BankData {
   banco: string;
@@ -139,14 +141,17 @@ export interface Microsite {
   supportedLanguages: string[];
 }
 
-// Mock Data
+// --- Mock Data Actualizada con URLs de Internet ---
 
 export const microsites: Microsite[] = [
+  // ==========================================
+  // CHIAPAS
+  // ==========================================
   {
     id: 'ms-001',
     slug: 'textiles-chiapas-zinacatan',
     urlPath: '/artesanos/zinacatan-chiapas',
-    logoUrl: '/img/logos/zinacatan-textiles.png',
+    logoUrl: imagenes.logos.zinacantanTextiles,
     primaryColor: '#8B4513',
     secondaryColor: '#D2691E',
     theme: 'earth',
@@ -176,9 +181,9 @@ export const microsites: Microsite[] = [
         category: 'Vestimenta',
         tags: ['bordado', 'tradicional', 'hecho a mano', 'tzotzil'],
         images: [
-          '/img/demo/chiapas-huipil-1.jpg',
-          '/img/demo/chiapas-huipil-2.jpg',
-          '/img/demo/chiapas-huipil-3.jpg'
+          imagenes.chiapas.productos.huipil1,
+          imagenes.chiapas.productos.huipil2,
+          imagenes.chiapas.productos.huipil3
         ],
         isAvailable: true
       },
@@ -192,8 +197,8 @@ export const microsites: Microsite[] = [
         category: 'Accesorios',
         tags: ['telar', 'lana', 'tintes naturales', 'maya'],
         images: [
-          '/img/demo/chiapas-rebozo-1.jpg',
-          '/img/demo/chiapas-rebozo-2.jpg'
+          imagenes.chiapas.productos.rebozo1,
+          imagenes.chiapas.productos.rebozo2
         ],
         isAvailable: true
       },
@@ -207,9 +212,9 @@ export const microsites: Microsite[] = [
         category: 'Accesorios',
         tags: ['bolsa', 'tejido', 'geométrico', 'colorido'],
         images: [
-          '/img/demo/chiapas-bolsa-1.jpg',
-          '/img/demo/chiapas-bolsa-2.jpg',
-          '/img/demo/chiapas-bolsa-3.jpg'
+          imagenes.chiapas.productos.bolsa1,
+          imagenes.chiapas.productos.bolsa2,
+          imagenes.chiapas.productos.bolsa3
         ],
         isAvailable: true
       },
@@ -223,7 +228,7 @@ export const microsites: Microsite[] = [
         category: 'Decoración',
         tags: ['bordado', 'decoración', 'hogar', 'flores'],
         images: [
-          '/img/demo/chiapas-camino-mesa-1.jpg'
+          imagenes.chiapas.productos.camino
         ],
         isAvailable: true
       }
@@ -239,8 +244,8 @@ export const microsites: Microsite[] = [
         category: 'Taller',
         tags: ['bordado', 'aprendizaje', 'cultural', 'manos'],
         images: [
-          '/img/demo/chiapas-taller-bordado-1.jpg',
-          '/img/demo/chiapas-taller-bordado-2.jpg'
+          imagenes.chiapas.taller.bordado1,
+          imagenes.chiapas.taller.bordado2
         ],
         isAvailable: true
       },
@@ -254,7 +259,7 @@ export const microsites: Microsite[] = [
         category: 'Experiencia',
         tags: ['tour', 'taller', 'proceso', 'textil'],
         images: [
-          '/img/demo/chiapas-visita-taller-1.jpg'
+          imagenes.chiapas.taller.visita
         ],
         isAvailable: true
       }
@@ -262,7 +267,7 @@ export const microsites: Microsite[] = [
     home: {
       headline: 'Textiles Tradicionales de Zinacantán',
       subheadline: 'Arte ancestral tzotzil tejido con el corazón. Cada pieza cuenta una historia de tradición y cultura.',
-      heroImage: '/img/demo/chiapas-hero.jpg',
+      heroImage: imagenes.chiapas.hero,
       ctaLabel: 'Explorar Productos',
       ctaTargetSection: 'products'
     },
@@ -282,35 +287,35 @@ export const microsites: Microsite[] = [
         id: 'gal-001',
         title: 'Telar de Cintura',
         description: 'Artesana trabajando en telar tradicional',
-        imageUrl: '/img/demo/chiapas-telar-1.jpg',
+        imageUrl: imagenes.chiapas.taller.telar,
         type: 'workshop'
       },
       {
         id: 'gal-002',
         title: 'Bordado en Proceso',
         description: 'Detalle del proceso de bordado a mano',
-        imageUrl: '/img/demo/chiapas-bordado-proceso.jpg',
+        imageUrl: imagenes.chiapas.taller.proceso,
         type: 'workshop'
       },
       {
         id: 'gal-003',
         title: 'Tintes Naturales',
         description: 'Preparación de tintes vegetales tradicionales',
-        imageUrl: '/img/demo/chiapas-tintes.jpg',
+        imageUrl: imagenes.chiapas.taller.tintes,
         type: 'workshop'
       },
       {
         id: 'gal-004',
         title: 'Cooperativa',
         description: 'Nuestro grupo de artesanas',
-        imageUrl: '/img/demo/chiapas-grupo.jpg',
+        imageUrl: imagenes.chiapas.grupo,
         type: 'community'
       },
       {
         id: 'gal-005',
         title: 'Huipiles Terminados',
         description: 'Colección de huipiles bordados',
-        imageUrl: '/img/demo/chiapas-huipiles-coleccion.jpg',
+        imageUrl: imagenes.chiapas.productos.huipilesColeccion,
         type: 'product'
       }
     ],
@@ -376,11 +381,15 @@ export const microsites: Microsite[] = [
     },
     supportedLanguages: ['es', 'tzotzil']
   },
+
+  // ==========================================
+  // YUCATAN
+  // ==========================================
   {
     id: 'ms-002',
     slug: 'ecoturismo-yucatan-uxmal',
     urlPath: '/turismo/uxmal-yucatan',
-    logoUrl: '/img/logos/ecoturismo-uxmal.png',
+    logoUrl: imagenes.logos.ecoturismoUxmal,
     primaryColor: '#1E3A8A',
     secondaryColor: '#3B82F6',
     theme: 'indigo',
@@ -410,8 +419,8 @@ export const microsites: Microsite[] = [
         category: 'Alimentos',
         tags: ['miel', 'orgánico', 'medicinal', 'maya'],
         images: [
-          '/img/demo/yucatan-miel-1.jpg',
-          '/img/demo/yucatan-miel-2.jpg'
+          imagenes.yucatan.productos.miel1,
+          imagenes.yucatan.productos.miel2
         ],
         isAvailable: true
       },
@@ -425,9 +434,9 @@ export const microsites: Microsite[] = [
         category: 'Artesanía',
         tags: ['hamaca', 'tejido', 'descanso', 'tradicional'],
         images: [
-          '/img/demo/yucatan-hamaca-1.jpg',
-          '/img/demo/yucatan-hamaca-2.jpg',
-          '/img/demo/yucatan-hamaca-3.jpg'
+          imagenes.yucatan.productos.hamaca1,
+          imagenes.yucatan.productos.hamaca2,
+          imagenes.yucatan.productos.hamaca3
         ],
         isAvailable: true
       },
@@ -441,7 +450,7 @@ export const microsites: Microsite[] = [
         category: 'Artesanía',
         tags: ['jícara', 'pirograbado', 'decoración', 'símbolos'],
         images: [
-          '/img/demo/yucatan-jicara-1.jpg'
+          imagenes.yucatan.productos.jicara
         ],
         isAvailable: true
       }
@@ -457,8 +466,8 @@ export const microsites: Microsite[] = [
         category: 'Tour Cultural',
         tags: ['arqueología', 'historia', 'maya', 'uxmal'],
         images: [
-          '/img/demo/yucatan-tour-uxmal-1.jpg',
-          '/img/demo/yucatan-tour-uxmal-2.jpg'
+          imagenes.yucatan.experiencias.tourUxmal1,
+          imagenes.yucatan.experiencias.tourUxmal2
         ],
         isAvailable: true
       },
@@ -472,9 +481,9 @@ export const microsites: Microsite[] = [
         category: 'Ecoturismo',
         tags: ['cenote', 'naturaleza', 'ceremonia', 'nado'],
         images: [
-          '/img/demo/yucatan-cenote-1.jpg',
-          '/img/demo/yucatan-cenote-2.jpg',
-          '/img/demo/yucatan-cenote-3.jpg'
+          imagenes.yucatan.experiencias.cenote1,
+          imagenes.yucatan.experiencias.cenote2,
+          imagenes.yucatan.experiencias.cenote3
         ],
         isAvailable: true
       },
@@ -488,8 +497,8 @@ export const microsites: Microsite[] = [
         category: 'Taller Gastronómico',
         tags: ['cocina', 'gastronomía', 'tradicional', 'aprendizaje'],
         images: [
-          '/img/demo/yucatan-cocina-1.jpg',
-          '/img/demo/yucatan-cocina-2.jpg'
+          imagenes.yucatan.experiencias.cocina1,
+          imagenes.yucatan.experiencias.cocina2
         ],
         isAvailable: true
       },
@@ -503,7 +512,7 @@ export const microsites: Microsite[] = [
         category: 'Ecoturismo',
         tags: ['aves', 'naturaleza', 'fotografía', 'biodiversidad'],
         images: [
-          '/img/demo/yucatan-aves-1.jpg'
+          imagenes.yucatan.naturaleza.aves
         ],
         isAvailable: true
       }
@@ -511,7 +520,7 @@ export const microsites: Microsite[] = [
     home: {
       headline: 'Descubre el Corazón de la Cultura Maya',
       subheadline: 'Experiencias auténticas de turismo comunitario en la tierra de los antiguos mayas. Conecta con la naturaleza, la historia y las tradiciones vivas.',
-      heroImage: '/img/demo/yucatan-hero.jpg',
+      heroImage: imagenes.yucatan.hero,
       ctaLabel: 'Ver Experiencias',
       ctaTargetSection: 'services'
     },
@@ -531,42 +540,42 @@ export const microsites: Microsite[] = [
         id: 'gal-101',
         title: 'Pirámide del Adivino',
         description: 'Vista de la majestuosa Pirámide del Adivino en Uxmal',
-        imageUrl: '/img/demo/yucatan-piramide.jpg',
+        imageUrl: imagenes.yucatan.comunidad.piramide,
         type: 'community'
       },
       {
         id: 'gal-102',
         title: 'Ceremonia Maya',
         description: 'Ceremonia tradicional de agradecimiento',
-        imageUrl: '/img/demo/yucatan-ceremonia.jpg',
+        imageUrl: imagenes.yucatan.comunidad.ceremonia,
         type: 'workshop'
       },
       {
         id: 'gal-103',
         title: 'Cenote Cristalino',
         description: 'Aguas turquesas del cenote comunitario',
-        imageUrl: '/img/demo/yucatan-cenote-agua.jpg',
+        imageUrl: imagenes.yucatan.naturaleza.cenoteAgua,
         type: 'community'
       },
       {
         id: 'gal-104',
         title: 'Cocina Tradicional',
         description: 'Preparación de cochinita pibil en horno de tierra',
-        imageUrl: '/img/demo/yucatan-pibil.jpg',
+        imageUrl: imagenes.yucatan.experiencias.pibil,
         type: 'workshop'
       },
       {
         id: 'gal-105',
         title: 'Artesanos Locales',
         description: 'Artesano tejiendo hamaca tradicional',
-        imageUrl: '/img/demo/yucatan-artesano.jpg',
+        imageUrl: imagenes.yucatan.comunidad.artesano,
         type: 'workshop'
       },
       {
         id: 'gal-106',
         title: 'Biodiversidad',
         description: 'Tucán en la selva yucateca',
-        imageUrl: '/img/demo/yucatan-tucan.jpg',
+        imageUrl: imagenes.yucatan.naturaleza.tucan,
         type: 'community'
       }
     ],
@@ -640,11 +649,15 @@ export const microsites: Microsite[] = [
     },
     supportedLanguages: ['es', 'maya', 'en']
   },
+
+  // ==========================================
+  // OAXACA
+  // ==========================================
   {
     id: 'ms-003',
     slug: 'cafe-organico-oaxaca-sierra',
     urlPath: '/cooperativa/cafe-sierra-oaxaca',
-    logoUrl: '/img/logos/cafe-sierra-oaxaca.png',
+    logoUrl: imagenes.logos.cafeOaxaca,
     primaryColor: '#065F46',
     secondaryColor: '#10B981',
     theme: 'light',
@@ -674,8 +687,8 @@ export const microsites: Microsite[] = [
         category: 'Café',
         tags: ['orgánico', 'arábica', 'grano entero', 'comercio justo'],
         images: [
-          '/img/demo/oaxaca-cafe-grano-1.jpg',
-          '/img/demo/oaxaca-cafe-grano-2.jpg'
+          imagenes.oaxaca.productos.grano1,
+          imagenes.oaxaca.productos.grano2
         ],
         isAvailable: true
       },
@@ -689,7 +702,7 @@ export const microsites: Microsite[] = [
         category: 'Café',
         tags: ['molido', 'tradicional', 'balanceado', 'orgánico'],
         images: [
-          '/img/demo/oaxaca-cafe-molido-1.jpg'
+          imagenes.oaxaca.productos.molido
         ],
         isAvailable: true
       },
@@ -703,8 +716,8 @@ export const microsites: Microsite[] = [
         category: 'Café Especialidad',
         tags: ['especialidad', 'reserva', 'premium', 'SCA'],
         images: [
-          '/img/demo/oaxaca-cafe-reserva-1.jpg',
-          '/img/demo/oaxaca-cafe-reserva-2.jpg'
+          imagenes.oaxaca.productos.reserva1,
+          imagenes.oaxaca.productos.reserva2
         ],
         isAvailable: true
       },
@@ -718,7 +731,7 @@ export const microsites: Microsite[] = [
         category: 'Derivados',
         tags: ['miel', 'orgánico', 'café', 'natural'],
         images: [
-          '/img/demo/oaxaca-miel-cafe-1.jpg'
+          imagenes.oaxaca.productos.miel
         ],
         isAvailable: true
       },
@@ -732,8 +745,8 @@ export const microsites: Microsite[] = [
         category: 'Kits',
         tags: ['degustación', 'variedad', 'regalo', 'muestra'],
         images: [
-          '/img/demo/oaxaca-kit-degustacion-1.jpg',
-          '/img/demo/oaxaca-kit-degustacion-2.jpg'
+          imagenes.oaxaca.productos.kit1,
+          imagenes.oaxaca.productos.kit2
         ],
         isAvailable: true
       },
@@ -747,7 +760,7 @@ export const microsites: Microsite[] = [
         category: 'Derivados',
         tags: ['composta', 'orgánico', 'sustentable', 'jardín'],
         images: [
-          '/img/demo/oaxaca-composta-1.jpg'
+          imagenes.oaxaca.productos.composta
         ],
         isAvailable: true
       }
@@ -763,9 +776,9 @@ export const microsites: Microsite[] = [
         category: 'Tour Educativo',
         tags: ['café', 'plantación', 'proceso', 'degustación'],
         images: [
-          '/img/demo/oaxaca-tour-cafe-1.jpg',
-          '/img/demo/oaxaca-tour-cafe-2.jpg',
-          '/img/demo/oaxaca-tour-cafe-3.jpg'
+          imagenes.oaxaca.experiencias.tour1,
+          imagenes.oaxaca.experiencias.tour2,
+          imagenes.oaxaca.experiencias.tour3
         ],
         isAvailable: true
       },
@@ -779,8 +792,8 @@ export const microsites: Microsite[] = [
         category: 'Taller',
         tags: ['catación', 'especialidad', 'aprendizaje', 'barista'],
         images: [
-          '/img/demo/oaxaca-catacion-1.jpg',
-          '/img/demo/oaxaca-catacion-2.jpg'
+          imagenes.oaxaca.experiencias.catacion1,
+          imagenes.oaxaca.experiencias.catacion2
         ],
         isAvailable: true
       },
@@ -794,7 +807,7 @@ export const microsites: Microsite[] = [
         category: 'Experiencia',
         tags: ['cosecha', 'agricultura', 'vivencial', 'tradicional'],
         images: [
-          '/img/demo/oaxaca-cosecha-1.jpg'
+          imagenes.oaxaca.procesos.cosecha
         ],
         isAvailable: true
       }
@@ -802,7 +815,7 @@ export const microsites: Microsite[] = [
     home: {
       headline: 'Café Orgánico de la Sierra Norte',
       subheadline: 'Cultivado con amor en las montañas de Oaxaca. Cada taza apoya a más de 120 familias cafetaleras y preserva nuestros bosques.',
-      heroImage: '/img/demo/oaxaca-hero.jpg',
+      heroImage: imagenes.oaxaca.hero,
       ctaLabel: 'Comprar Café',
       ctaTargetSection: 'products'
     },
@@ -822,49 +835,49 @@ export const microsites: Microsite[] = [
         id: 'gal-201',
         title: 'Cafetal en la Sierra',
         description: 'Vista de nuestras plantaciones en las montañas',
-        imageUrl: '/img/demo/oaxaca-cafetal-1.jpg',
+        imageUrl: imagenes.oaxaca.paisajes.cafetal,
         type: 'community'
       },
       {
         id: 'gal-202',
         title: 'Cosecha Manual',
         description: 'Recolección selectiva de cerezas maduras',
-        imageUrl: '/img/demo/oaxaca-cosecha-manual.jpg',
+        imageUrl: imagenes.oaxaca.procesos.cosechaManual,
         type: 'workshop'
       },
       {
         id: 'gal-203',
         title: 'Beneficiado Húmedo',
         description: 'Proceso de despulpado y fermentación',
-        imageUrl: '/img/demo/oaxaca-beneficiado.jpg',
+        imageUrl: imagenes.oaxaca.procesos.beneficiado,
         type: 'workshop'
       },
       {
         id: 'gal-204',
         title: 'Secado al Sol',
         description: 'Café pergamino secándose en patios tradicionales',
-        imageUrl: '/img/demo/oaxaca-secado.jpg',
+        imageUrl: imagenes.oaxaca.procesos.secado,
         type: 'workshop'
       },
       {
         id: 'gal-205',
         title: 'Cooperativistas',
         description: 'Asamblea de la cooperativa cafetalera',
-        imageUrl: '/img/demo/oaxaca-cooperativa.jpg',
+        imageUrl: imagenes.oaxaca.cooperativa,
         type: 'community'
       },
       {
         id: 'gal-206',
         title: 'Tostado Artesanal',
         description: 'Proceso de tostado en pequeños lotes',
-        imageUrl: '/img/demo/oaxaca-tostado.jpg',
+        imageUrl: imagenes.oaxaca.procesos.tostado,
         type: 'product'
       },
       {
         id: 'gal-207',
         title: 'Biodiversidad',
         description: 'Bosque mesófilo que rodea nuestros cafetales',
-        imageUrl: '/img/demo/oaxaca-bosque.jpg',
+        imageUrl: imagenes.oaxaca.paisajes.bosque,
         type: 'community'
       }
     ],
